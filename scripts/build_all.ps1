@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "FPD_V3" `
+  -ModName "Final Project Diary V3" `
+  -ModFolder "final_project_diary" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/final-project-diary/Final-Project-Diary-V3-Original.zip" `
+  -ModBaseFilesUrlHash "062920774fe5850267eb96e927945d9225ac712097da3771fef78f6aead51c40" `
+  -ModReadmePath "Read me File.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
